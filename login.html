@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - My Account</title>
+</head>
+<body>
+
+    <main>
+        <h2>Account Login</h2>
+        
+        <!-- The form action specifies where to send data. method="POST" keeps credentials secure. -->
+        <form action="/login-endpoint" method="POST">
+            
+            <!-- Email Input Field -->
+            <div>
+                <label for="user-email">Email Address:</label>
+                <input 
+                    type="email" 
+                    id="user-email" 
+                    name="email" 
+                    placeholder="name@example.com" 
+                    required>
+            </div>
+
+            <br>
+
+            <!-- Password Input Field -->
+            <div>
+                <label for="user-password">Password:</label>
+                <input 
+                    type="password" 
+                    id="user-password" 
+                    name="password" 
+                    placeholder="Enter your password" 
+                    required>
+            </div>
+
+            <br>
+
+            <!-- Remember Me Checkbox -->
+            <div>
+                <label>
+                    <input type="checkbox" name="remember_me"> Remember me
+                </label>
+            </div>
+
+            <br>
+
+            <!-- Submit Button -->
+            <button type="submit">Sign In</button>
+
+        </form>
+
+        <p>Don't have an account? <a href="/signup.html">Sign up here</a>.</p>
+    </main>
+
+</body>
+</html>
+
